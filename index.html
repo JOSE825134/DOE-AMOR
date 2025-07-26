@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doe Amor - Ajude Quem Precisa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f4f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #2a9d8f;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .cta-button {
+      background-color: #e76f51;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .about, .impact, .testimonials, .donate {
+      margin-bottom: 2rem;
+    }
+    .impact ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .impact li {
+      margin-bottom: 0.5rem;
+    }
+    form input, form select {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #264653;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      width: 100%;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Doe Amor</h1>
+    <p>Ajude 50 crianças em situação de vulnerabilidade na Amazônia</p>
+    <button class="cta-button" onclick="document.getElementById('doar').scrollIntoView({ behavior: 'smooth' })">Doe Agora</button>
+  </header>
+
+  <section class="about">
+    <h2>Sobre a Causa</h2>
+    <p>Estamos arrecadando fundos para garantir alimentação, educação e saúde básica para crianças da tríplice fronteira entre Brasil, Colômbia e Peru. Toda doação importa.</p>
+  </section>
+
+  <section class="impact">
+    <h2>Como sua doação ajuda</h2>
+    <ul>
+      <li>R$20 - Lanche e higiene por uma semana</li>
+      <li>R$50 - Kit de material escolar</li>
+      <li>R$100 - Atendimento médico básico</li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>Depoimentos</h2>
+    <p>"Ver meu filho com material escolar novo foi emocionante. Obrigada por tudo!" – Maria, mãe atendida</p>
+    <p>"Fazer parte disso mudou minha forma de ver o mundo." – João, doador</p>
+  </section>
+
+  <section class="donate" id="doar">
+    <h2>Faça sua doação</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <select required>
+        <option value="">Escolha o valor</option>
+        <option value="20">R$20</option>
+        <option value="50">R$50</option>
+        <option value="100">R$100</option>
+        <option value="outro">Outro valor</option>
+      </select>
+      <button type="submit">Contribuir</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Doe Amor | Contato: contato@doeamor.org | CNPJ: 00.000.000/0001-00</p>
+  </footer>
+</body>
+</html>
